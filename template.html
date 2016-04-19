@@ -1,0 +1,93 @@
+<!--The background boxes have a 10px margbetween them.
+The inner boxes are divided as evenly across the horizontal width as possible and have a 6px margbetween them
+The middle row of boxes alternate between 100px and 75px in height.
+The box on the bottom left is 35px high.
+Try using percents instead of pixel widths. Which do you prefer? --> 
+
+<!doctype html>
+<html>
+<head>
+    <style>
+        .top-box{
+            background-color:#cccccc;
+            height: 100px;
+            width: 100px;
+            margin: 50px 0px 0px 50px;
+            display: inline-block;
+        }
+
+        body{
+            margin: 0;
+        }
+
+        .top-grey{
+        background-color: #555555;
+        width: 700px;
+        height: 200px;
+        margin: 4px;
+        display:block;
+        }
+
+        .middle-grey{
+        background-color: #555555;
+        width: 700px;
+        height: 200px;
+        margin: 4px;
+        }
+
+        .middle-box-high {
+        background-color:#cccccc;
+        height: 100px;
+        width: 100px;
+        margin: 50px 0px 0px 50px;
+        display: inline-block;  
+        }
+
+         .middle-box-low {
+             background-color:#cccccc;
+        height: 100px;
+        width: 100px;
+        margin: 50px 0px 0px 50px;
+        display: inline-block;
+        }
+
+        .bottom-grey{
+        background-color: #555555;
+        width: 700px;
+        height: 200px;
+        margin: 4px;
+        }
+
+        .bottom-box-low {
+
+        }
+
+         .bottom-box-high {
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--<h1>Hello World</h1>-->
+<div class="top-grey">
+    <div class="top-box"></div>
+    <div class="top-box"></div>
+    <div class="top-box"></div>
+ </div>
+
+<div class="middle-grey">
+    <div class="middle-box-high"></div>
+    <div class="middle-box-low"></div>
+    <div class="middle-box-high"></div>
+    <div class="middle-box-low"></div>
+</div>
+
+<div class="bottom-grey">
+    <div class="bottom-box-low"></div>
+    <div class="bottom-box-high"></div>
+</div>
+  
+</body>
+</html>
